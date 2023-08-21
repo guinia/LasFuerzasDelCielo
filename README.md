@@ -9,10 +9,10 @@ que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su ali
 
 Listado de Participantes
 
-Bürky, Lucía
-Citro, Camila
-Costa, Máximo
-Guiñazu, Tomás
-Mezzabotta, Tomás
-Vicente, Santiago
-Zárate, Sofía
+- Bürky, Lucía
+- Citro, Camila
+- Costa, Máximo
+- Guiñazu, Tomás
+- Mezzabotta, Tomás
+- Vicente, Santiago
+- Zárate, Sofía
