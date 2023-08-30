@@ -1,6 +1,6 @@
-# LasFuerzasDelCielo
+# Trabajo Final - Desarrollo de Software 2023 - UTN-FRM
 
-### ***EL BUEN SABOR***
+## ***EL BUEN SABOR***
 
 ![Logo](https://github.com/guinia/LasFuerzasDelCielo/assets/141883421/f440b64e-c4f2-4198-9568-e2561865b159)
 
@@ -11,8 +11,10 @@ Nuestro público objetivo abarca a amantes de la comida que valoran la calidad, 
 de diferentes cocinas, pero que también buscan la conveniencia de recibir estos placeres culinarios directamente en sus hogares u oficinas. Los amantes de la comida aventureros, los profesionales ocupados y aquellos
 que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su aliado confiable para satisfacer sus antojos con auténtica comida de alta calidad.
 
-## Listado de Participantes
-
+## Equipo
+**Nombre del equipo:** Las Fuerzas del Cielo
+**Comisión:** 3k9
+**Integrantes:**
 - Bürky, Lucía
 - Citro, Camila
 - Costa, Máximo
