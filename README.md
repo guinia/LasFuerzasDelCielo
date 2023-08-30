@@ -11,7 +11,7 @@ Nuestro público objetivo abarca a amantes de la comida que valoran la calidad, 
 de diferentes cocinas, pero que también buscan la conveniencia de recibir estos placeres culinarios directamente en sus hogares u oficinas. Los amantes de la comida aventureros, los profesionales ocupados y aquellos
 que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su aliado confiable para satisfacer sus antojos con auténtica comida de alta calidad.
 
-Listado de Participantes
+## Listado de Participantes
 
 - Bürky, Lucía
 - Citro, Camila
