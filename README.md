@@ -13,7 +13,9 @@ que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su ali
 
 ## Equipo
 **Nombre del equipo:** Las Fuerzas del Cielo
+
 **Comisión:** 3k9
+
 **Integrantes:**
 - Bürky, Lucía
 - Citro, Camila
