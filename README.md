@@ -24,3 +24,6 @@ que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su ali
 - Mezzabotta, Tomás
 - Vicente, Santiago
 - Zárate, Sofía
+
+## Tecnologías utilizadas:
+- Figma: https://www.figma.com/file/pUACfg9MD9V1ojv0LM2m9o/WireFrames?type=design&mode=design&t=rBGWWuMbGpKBApy2-0
