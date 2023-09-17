@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --amarillo: #FFBC0D;
+    --marron: #6E5519;
+    --cremita: #F5EBDC;
+    --ladrillo: #D32B08;
+    --naranja: #E85D04;
+    --verde: #007E00;
+
+}
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cremita);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-detalle{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 96px;
+    width: 80%; 
+    border-radius: 16px;
+    padding: 16px 24px;
+}
+.boton-cerrar{
+    padding: 8px;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+}
+.contenedor-titulos{
+    text-align: center;
+}
+.contenedor-factura h1 {
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.6px;
+    font-size: 2.3rem;
+}
+.contenedor-factura h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+.caja-productos{
+    background-color: #ffda7b;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 16px;
+    max-width: fit-content;
+
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.producto img{
+    width: 30%;
+    border: 1px solid var(--marron);
+    border-radius: 16px;
+    margin: 16px;
+}
+.textos-producto{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+}
+.caja-detalles{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffda7b;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 16px;
+    gap: 24px;
+    width: 55%;
+    
+}
+.contenedor-cajas{
+    display: flex;
+    flex-direction: row;
+}
+.detalles-producto{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin: 16px auto;
+    gap: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.d1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.linea{
+    background-color: var(--marron);
+    height: 2px;
+    margin:0 32px;
+}
+.detalles-compra{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap:24px;
+    margin: 16px;
+}
+.btn-ver{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 37%;
+    background-color: var(--ladrillo);
+    border: 1px solid var(--ladrillo);
+    padding: 4px 8px;
+    border-radius: 16px;
+    color: #fff;
+}
+.btn-ver:hover{
+    color: var(--ladrillo);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/********************************/
+/*      PANTALLA PARA TABLETS   */
+/********************************/
+@media (max-width: 1280px){
+    .detalles-producto{
+        max-width: 50%;
+        gap: 16px;
+    }
+    .btn-ver{
+        margin-left: 23%;
+    }
+
+}
+
+
+/************************************/
+/*      PANTALLA PARA CELULARES     */
+/************************************/
+@media (max-width: 720px){
+    .contenedor-detalle{
+        margin: 32px 24px;
+    }
+    .contenedor-cajas{
+        display: grid;
+        grid-template-rows: repeat(2);
+    }
+    .caja-productos{
+        width: 100%;
+        margin: 8px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+    }
+    .producto{
+        display: grid;
+    }
+    .producto img{
+        /* display: none; */
+        width: 85%; 
+        align-items: center;
+    }
+    .textos-producto{
+        text-align: center;
+    }
+    .textos-producto p{
+        display: none;
+    }
+    .caja-detalles{
+        width: 100%;
+        margin: 8px;
+    }
+    .detalles-producto{
+        gap: 12px;
+    }.btn-ver{
+        margin-left: 37%;
+    }
+    
+}
