@@ -448,11 +448,16 @@ th, td{
 
    /*       FOOTER      */
     .pie-pagina .grupo-1{
-        /* width: 90%;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
-        padding: 35px 0px; */
-        flex-wrap: wrap;
+        padding: 35px 0px; 
+        /*flex-wrap: wrap;*/
+    }
+	.pie-pagina .grupo-1 .box figure{
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
     }
 }
 
