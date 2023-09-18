@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --amarillo: #FFBC0D;
+    --marron: #6E5519;
+    --cremita: #F5EBDC;
+    --ladrillo: #D32B08;
+    --naranja: #E85D04;
+    --verde: #007E00;
+
+}
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cremita);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-factura{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 96px;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 24px;
+}
+.boton-cerrar{
+    padding: 8px;
+    margin-left: auto;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 24px;
+}
+.contenedor-factura h1 {
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.6px;
+    font-size: 2.3rem;
+}
+.contenedor-factura h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.8px;
+}
+.linea{
+    height: 2px;
+    background-color: #000;
+    width: max-content;
+}
+.contenedor-info-factura{
+    margin: 16px auto;
+    column-count: 2;
+    column-gap: 48px;
+}
+.contenedor-info-factura p{
+    margin: 0;
+    padding: 4px 0;
+    break-inside: avoid; /*controlar cómo se deben manejar los saltos de página o columnas dentro de un elemento*/
+}
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    padding: 8px;
+    max-width: fit-content;
+    overflow-x: auto;
+    width: 100%;
+}
+.tabla{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    align-items: center;
+    text-align: center;
+    
+}
+th, td{
+    padding: 8px 16px;
+}
+
+.contenedor-botones{
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+.btn-final{
+    background-color: var(--ladrillo);
+    color: #fff;
+    border: 1px solid var(--ladrillo);
+    padding: 4px 8px;
+    font-weight: 600;
+    border-radius: 16px;
+}
+.btn-final:hover{
+    background-color: #fff;
+    color: var(--ladrillo);
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 10;
+    max-width: 80%;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.close-button {
+    cursor: pointer;
+}
+#overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5) scale(0);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, .5) scale(1);
+}
+
+
+/********************************/
+/*      PANTALLA PARA TABLETS   */
+/********************************/
+@media (max-width: 1280px){
+
+
+}
+
+
+/************************************/
+/*      PANTALLA PARA CELULARES     */
+/************************************/
+@media (max-width: 720px){
+    
+    .contenedor-titulos{
+        text-align: center;
+    }
+    /*tabla responsiva*/
+    th, td{
+        display: inline;
+        
+        font-size: 1rem;
+        width: 100%; 
+        text-align: left;
+    }
+    tr{
+        display: flex;
+        flex-direction: row;
+        width:max-content;
+        text-align: center;
+    }  
+
+
+    tbody{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .cabeza-tabla{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .contenedor-info-factura{
+        display: grid;
+        margin: 16px;
+        text-align: center;
+    }
+
+}
