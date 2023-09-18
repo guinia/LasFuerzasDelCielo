@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleMovimientosMonetarios.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>Movimientos Monetarios</title>
+</head>
+<body class="body">
+<!--HEADER-->
+<header>
+    <!--NAVBAR-->
+    <div class="contenedor-navbar">
+        <nav class="navbar">
+            <!--LOGO Y BARRA DE BUSQUEDA-->
+            <div class="contenedor-logo-search">
+                <!--LOGO-->
+                <div class="contenedor-logo">
+                    <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/8b56553e8949ea7fa9e3d154ed8df20ec2cd959d/logo.svg" alt="El Buen Sabor logo" class="logo-img">
+                </div>
+
+                <!--BARRA DE BUSQUEDA-->
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." class="barra-buscar"/>
+                    <button class="btn-search">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+            </div>
+
+            <!--ITEMS DE LA NAVBAR-->
+            <div class="contenedor-items">
+                <ul class="items links-navbar">
+                    <li class=" item-link"><a href="#" >Inicio</a></li>
+                    <li class=" item-link nav-item-dropdown">
+                        <a href="#" class="contenedor-prod">
+                            Productos
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </a>
+                        <ul class="vertical-menu">
+                            <li class="dp-item">
+                                <a href="#Promos">Promos</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Pizzas">Pizzas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Hamburguesas">Hamburguesas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Lomos">Lomos</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Papas">Papas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Bebidas">Bebidas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#VerTodo">Ver todo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--botones de la navbar-->
+                <ul class="items">
+                    <li class=" item-link nav-item-dropdown">
+                        <a href="#" class="btn-navbar contenedor-usuario">
+                            ¡Hola, Admin!
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </a>
+                        <ul class="vertical-menu">
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">person</span>
+                                <a href="#Promos">Mi perfil</a>
+                            </li>
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <a href="#Pizzas">Historial de compras</a>
+                            </li>
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">logout</span>
+                                <a href="#Hamburguesas">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--Menu para celulares-->
+            <button  class="contenedor-menu-cel" >
+                <span class="material-symbols-outlined" id="icono-menu">menu</span>
+            </button>
+        </nav>
+    </div>
+</header>
+<!--CONTENIDO DEL MAIN-->
+<main class="contenido-ppal">
+    <body>
+        <div class="contenedor-recuadro">
+            <div class="container">
+                <header>
+                    <h1>MOVIMIENTOS MONETARIOS</h1>
+                </header>
+                <section>
+                    <div class="fechas">
+                        <label for="fechaInicio">Fecha de Inicio:</label>
+                        <input type="date" id="fechaInicio">
+                        <label for="fechaFin">Fecha de Fin:</label>
+                        <input type="date" id="fechaFin">
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="rounded-left">Total de Ingresos</th>
+                                <th>Costos</th>
+                                <th class="rounded-right">Ganancias del local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$2300</td>
+                                <td>$1000</td>
+                                <td>$1300</td> 
+                            </tr>
+                            <tr>
+                                <td>$4300</td>
+                                <td>$1500</td>
+                                <td>$2800</td>
+                            </tr>
+                            <tr>
+                                <td>$3100</td>
+                                <td>$1400</td>
+                                <td>$1700</td>
+                            </tr>
+                            <tr>
+                                <td>$2300</td>
+                                <td>$1000</td>
+                                <td>$1300</td> 
+                            </tr>
+                            <tr>
+                                <td>$4300</td>
+                                <td>$1500</td>
+                                <td>$2800</td>
+                            </tr>
+                            <tr>
+                                <td>$3100</td>
+                                <td>$1400</td>
+                                <td>$1700</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="boton-descargar"><img width="23" src="imagenes/Captura.PNG">&nbsp;&nbsp;Descargar</button>
+                </section>
+            </div>
+        </div>
+    </body>
+    
+</main>
+
+<!--FOOTER-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box caja-logo">
+            <figure >
+                <a href="#">
+                    <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" alt="Logo del Buen Sabor">
+                </a>
+            </figure>
+            <p id="nombre">EL BUEN SABOR</p>
+        </div>
+        <div class="box">
+            <h2>Acerca</h2>
+            <a href="#" class="pie-link"><p>Sobre Nosotros</p></a>
+            <a href="#"><p>Términos y Condiciones</p></a>
+            <a href="#"><p>Privacidad</p></a>
+            <a href="#"><p>Invita a un amigo</p></a>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+                <a href="#"><p>Facebook</p></a>
+                <a href="#"><p>Instagram</p></a>
+                <a href="#"><p>Twitter</p></a>
+                <a href="#"><p>Tik Tok</p></a>
+        </div>
+        <div class="box">
+            <h2> Horarios de Atención </h2>
+            <p>Lunes a Domingos</p>
+            <p> 20:00 hs - 00:00 hs</p>
+            <p>Sábados y Domingos</p>
+            <p> 11:00 hs - 15:00 hs</p>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>El Buen Sabor</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+</body>
+</html>
