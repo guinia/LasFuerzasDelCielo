@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --amarillo: #FFBC0D;
+    --marron: #6E5519;
+    --cremita: #F5EBDC;
+    --ladrillo: #D32B08;
+    --naranja: #E85D04;
+    --verde: #007E00;
+
+}
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cremita);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 720px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container {
+    width: 35%;
+    border-radius: 24px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    width: 85%;
+    text-align: center;
+    margin: 16px;
+}
+
+p{
+    padding: 0px 40px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-comun{
+    background-color: var(--ladrillo);
+    color: var(--cremita);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 16px;
+    border-radius: 8px;
+    border: none;
+    gap: 4px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.btn-comun:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 1200px){
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 740px){
+    .container{
+        width: 80%;
+    }
+}
