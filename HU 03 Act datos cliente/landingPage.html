@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>El Buen Sabor</title>
+</head>
+<body>
+<!--HEADER-->
+    <header>
+        <!--NAVBAR-->
+        <div class="contenedor-navbar">
+            <nav class="navbar">
+                <!--LOGO Y BARRA DE BUSQUEDA-->
+                <div class="contenedor-logo-search">
+                    <!--LOGO-->
+                    <div class="contenedor-logo">
+                        <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg"
+                            alt="El Buen Sabor logo" class="logo-img">
+                    </div>
+        
+                    <!--BARRA DE BUSQUEDA-->
+                    <form class="search-form">
+                        <input type="search" placeholder="Buscar..." class="barra-buscar" />
+                        <button class="btn-search">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </form>
+                </div>
+        
+                <!--ITEMS DE LA NAVBAR-->
+                <div class="contenedor-items">
+                    <ul class="items links-navbar">
+                        <li class=" item-link"><a href="#">Inicio</a></li>
+                        <li class=" item-link nav-item-dropdown">
+                            <a href="#" class="contenedor-prod">
+                                Productos
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </a>
+                            <ul class="vertical-menu">
+                                <li class="dp-item">
+                                    <a href="#Promos">Promos</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#Pizzas">Pizzas</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#Hamburguesas">Hamburguesas</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#Lomos">Lomos</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#Papas">Papas</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#Bebidas">Bebidas</a>
+                                </li>
+                                <li class="dp-item">
+                                    <a href="#VerTodo">Ver todo</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--botones de la navbar-->
+                    <ul class="items">
+                        <li class=" item-link nav-item-dropdown">
+                            <a href="#" class="btn-navbar contenedor-usuario">
+                                ¡Hola, Alberto!
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </a>
+                            <ul class="vertical-menu">
+                                <li class="dp-item">
+                                    <span class="material-symbols-outlined">person</span>
+                                    <a href="#Perfil">Mi perfil</a>
+                                </li>
+                                <li class="dp-item">
+                                    <span class="material-symbols-outlined">shopping_bag</span>
+                                    <a href="#Historial">Historial de compras</a>
+                                </li>
+                                <li class="dp-item">
+                                    <span class="material-symbols-outlined">logout</span>
+                                    <a href="#CerrarSesión">Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <span class="material-symbols-outlined carrito">shopping_cart</span>
+                    </ul>
+                </div>
+                <!--Menu para celulares-->
+                <button class="contenedor-menu-cel">
+                    <span class="material-symbols-outlined" id="icono-menu">menu</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+<!--CONTENIDO DE LA LANDING PAGE-->
+    <main class="main">
+        <!--Primera parte: foto y texto-->
+        <section class="muestra-foto">
+            <div class="caja-inicio">
+                <div class="caja-titulo">
+                    <h1 class="titulo-ppal">LA MEJOR COMIDA DE MENDOZA</h1>
+                    <p class="texto-inicio">Nuestro menú diverso ofrece opciones para todos los gustos, donde cada bocado es una explosión de sabor.</p>
+                    <button type="button" class="btn-inicio">¡Pedí ya!</button>
+                </div>
+                <div class="imagen-inicio">
+                    <img src="https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Armado-whopper-doble-con-queso.png" alt="Hamburguesa" id="hambur-inicio">
+                </div>
+            </div>
+        </section>
+        <!--Segunda parte: catalogo de productos-->
+        <section class="muestra-productos">
+            <!--caja de muestra de los productos-->
+            <div class="caja-productos">
+                <!--Mini barra-->
+                <h1 class="titulo-productos">Productos</h1>
+                <div class="opciones-productos">
+                    <a href="#" class="item-productos">Promos</a>
+                    <a href="#" class="item-productos">Pizzas</a>
+                    <a href="#" class="item-productos">Hamburguesas</a>
+                    <a href="#" class="item-productos">Lomos</a>
+                    <a href="#" class="item-productos">Papas</a>
+                    <a href="#" class="item-productos">Bebidas</a>
+                </div>
+                
+                <!--imagenes productos-->
+                <div class="container-items">
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Pepperoni</h2>
+                            <figure>
+                                <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-pepperoni.jpg?raw=true" 
+                                alt="pizza pepperoni" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Italiana</h2>
+                            <figure>
+                            <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-italiana.jpg?raw=true"
+                                alt="pizza italiana" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Fresh</h2> 
+                            <figure>
+                            <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-fresh.jpg?raw=true"
+                                alt="pizza rucula" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Mariachi</h2>            
+                            <figure>
+                            <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-mariachi.jpg?raw=true"
+                                alt="pizza mariachi" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Doble Muzza</h2>
+                            <figure>
+                            <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-doble-muzza.jpg?raw=true"
+                                alt="pizza doble muzza" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Amor Pepperoni</h2> 
+                            <figure>
+                            <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-amor-pepperoni.jpg?raw=true"
+                                 alt="amor pepperoni" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Champi</h2>
+                                <figure>
+                                    <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-champignon.jpg?raw=true"
+                                        alt="pizza champignon" class="producto-foto">
+                                </figure>
+                                <container class="info2">
+                                    <p class="price">$2000</p>
+                                    <button class="boton-item">Agregar</button>
+                                </container>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info-product">
+                            <h2 class="product-name">Pizza Calabresa</h2>
+                            <figure>
+                                <img src="https://github.com/guinia/LasFuerzasDelCielo/blob/images/pizza-calabresa.jpg?raw=true"
+                                    alt="pizza calabresa" class="producto-foto">
+                            </figure>
+                            <container class="info2">
+                                <p class="price">$2000</p>
+                                <button class="boton-item">Agregar</button>
+                            </container>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!--CONTENIDO-->
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" alt="Logo del Buen Sabor">
+                    </a>
+                </figure>
+                <p id="nombre">EL BUEN SABOR</p>
+            </div>
+            <div class="box">
+                <h2>Acerca</h2>
+                <a href="#">
+                    <p>Sobre Nosotros</p>
+                </a>
+                <a href="#">
+                    <p>Términos y Condiciones</p>
+                </a>
+                <a href="#">
+                    <p>Privacidad</p>
+                </a>
+                <a href="#">
+                    <p>Invita a un amigo</p>
+                </a>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <a href="#">
+                    <p>Facebook</p>
+                </a>
+                <a href="#">
+                    <p>Instagram</p>
+                </a>
+                <a href="#">
+                    <p>Twitter</p>
+                </a>
+                <a href="#">
+                    <p>Tik Tok</p>
+                </a>
+            </div>
+            <div class="box">
+                <h2> Horarios de Atención </h2>
+                <p>Lunes a Domingos</p>
+                <p> 20:00 hs - 00:00 hs</p>
+                <p>Sábados y Domingos</p>
+                <p> 11:00 hs - 15:00 hs</p>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>El Buen Sabor</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
