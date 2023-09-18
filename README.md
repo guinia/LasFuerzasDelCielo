@@ -27,3 +27,4 @@ que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su ali
 
 ## Tecnologías utilizadas:
 - Figma: https://www.figma.com/file/pUACfg9MD9V1ojv0LM2m9o/WireFrames?type=design&mode=design&t=rBGWWuMbGpKBApy2-0
+- Jira: https://elbuensabor23.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog
