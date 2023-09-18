@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --amarillo: #FFBC0D;
+    --marron: #6E5519;
+    --cremita: #F5EBDC;
+    --ladrillo: #D32B08;
+    --naranja: #E85D04;
+    --verde: #007E00;
+
+}
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cremita);
+}
+
+.container {
+    margin: 80px 400px;
+    border-radius: 24px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+h1{
+    border-bottom: 1px solid black;
+    width: 480px;
+    text-align: center;
+    margin: 16px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 54px;
+    justify-content: center;
+}
+
+.dato1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 54px;
+    justify-content: center;
+    align-items: end;
+}
+
+label {
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+input {
+    margin: 2px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+input:focus{
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(182, 211, 255);
+}
+
+.btn-comun{
+    background-color: var(--ladrillo);
+    color: var(--cremita);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    gap: 8px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    width: 178px;
+    margin-top: 12px;
+}
+
+.btn-comun:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 1140px){
+
+    .container {
+        width: 90%;
+    }
+
+    .dato {
+        margin: 0px 24px;
+    }
+}
+
+@media (max-width: 1140px){
+
+    form{
+        grid-template-columns: auto;
+    }
+    
+    h1{
+        width: 80%;
+    }
+}
