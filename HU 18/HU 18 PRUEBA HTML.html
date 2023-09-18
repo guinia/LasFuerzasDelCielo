@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDetallePedidoDelivery.css">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="HU 18 PRUEBA CSS.css" />
+    
+    <title>Detalle Pedido</title>
+</head>
+<body class="body">
+  <!--HEADER-->
+  <header>
+    <!--NAVBAR-->
+    <div class="contenedor-navbar">
+        <nav class="navbar">
+            <!--LOGO Y BARRA DE BUSQUEDA-->
+            <div class="contenedor-logo-search">
+                <!--LOGO-->
+                <div class="contenedor-logo">
+                    <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/7edc1aa46f8801cac7757560d1fcec350e002965/logo.svg" alt="El Buen Sabor logo" class="logo-img">
+                </div>
+
+                <!--BARRA DE BUSQUEDA-->
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." class="barra-buscar"/>
+                    <button class="btn-search">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+            </div>
+
+            <!--ITEMS DE LA NAVBAR-->
+            <div class="contenedor-items">
+                <ul class="items links-navbar">
+                    <li class=" item-link"><a href="#" >Inicio</a></li>
+                    <li class=" item-link nav-item-dropdown">
+                        <a href="#" class="contenedor-prod">
+                            Productos
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </a>
+                        <ul class="vertical-menu">
+                            <li class="dp-item">
+                                <a href="#Promos">Promos</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Pizzas">Pizzas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Hamburguesas">Hamburguesas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Lomos">Lomos</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Papas">Papas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#Bebidas">Bebidas</a>
+                            </li>
+                            <li class="dp-item">
+                                <a href="#VerTodo">Ver todo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--botones de la navbar-->
+                <ul class="items">
+                    <li class=" item-link nav-item-dropdown">
+                        <a href="#" class="btn-navbar contenedor-usuario">
+                            ¡Hola, Delivery!
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </a>
+                        <ul class="vertical-menu">
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">person</span>
+                                <a href="#Promos">Mi perfil</a>
+                            </li>
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <a href="#Pizzas">Historial de pedidos</a>
+                            </li>
+                            <li class="dp-item">
+                                <span class="material-symbols-outlined">logout</span>
+                                <a href="#Hamburguesas">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--Menu para celulares-->
+            <button  class="contenedor-menu-cel" >
+                <span class="material-symbols-outlined" id="icono-menu">menu</span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+  <h1 class="titulo">¡Factura Generada exitosamente!</h1>
+  <h2 class="titulo">Pedido N°123456</h2>
+    <div class="linea-separacion"></div>
+    <div class="contenido-pedido">
+        <div class="info-pedido">
+            <p><b>CUIL: </b>20-4455778-1</p>
+            <p><b>Ing. Bruros </b>54-48544-5</p>
+            <p><b>IVA: </b>Monotributo</p>
+            <p><b>Nombre y Apellido: </b>Alberto Cortez</p>
+            <p><b>Direccion: </b>Rodriguez 273</p>
+            <p><b>Localidad: </b>Mendoza</p>
+        </div>
+        <!--tabla-->
+        <div class="contenedor-tabla">
+          <table class="tabla">
+            <thead >
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hamburguesa sin lechuga</td>
+                <td>1</td>
+                <td>$2300</td>
+                <td>$2300</td>
+              </tr>
+              <tr>
+                <td>Hamburguesa con chedar</td>
+                <td>1</td>
+                <td>$2350</td>
+                <td>$2350</td>
+              </tr>
+              <tr>
+                <td>Hamburguesa completa</td>
+                <td>1</td>
+                <td>$3100</td>
+                <td>$3100</td>
+              </tr>
+              <tr>
+                <td>Lomo completo</td>
+                <td>2</td>
+                <td>$4300</td>
+                <td>$8600</td>
+              </tr>
+              <tr>
+                <td>Pizza Napolitana</td>
+                <td>3</td>
+                <td>$2300</td>
+                <td>$6900</td>
+              </tr>
+              <tr>
+                <td>Pizza con rúcula y jamón crudo</td>
+                <td>1</td>
+                <td>$2300</td>
+                <td>$2300</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="contenedor-botones">
+            <button type="button" class="btn-cajero">Imprimir</button>
+            <button type="button" class="btn-cajero">Descargar</button>
+        </div>
+    </div>
+</main>
+    
+
+
+<!--FOOTER-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box caja-logo">
+            <figure >
+                <a href="#">
+                    <img src="https://raw.githubusercontent.com/guinia/LasFuerzasDelCielo/688ec6c2a2b9f1bcd9e2a7cacf887efd1a53ef58/logo.svg" alt="Logo del Buen Sabor">
+                </a>
+            </figure>
+            <p id="nombre">EL BUEN SABOR</p>
+        </div>
+        <div class="box">
+            <h2>Acerca</h2>
+            <a href="#" class="pie-link"><p>Sobre Nosotros</p></a>
+            <a href="#"><p>Términos y Condiciones</p></a>
+            <a href="#"><p>Privacidad</p></a>
+            <a href="#"><p>Invita a un amigo</p></a>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+                <a href="#"><p>Facebook</p></a>
+                <a href="#"><p>Instagram</p></a>
+                <a href="#"><p>Twitter</p></a>
+                <a href="#"><p>Tik Tok</p></a>
+        </div>
+        <div class="box">
+            <h2> Horarios de Atención </h2>
+            <p>Lunes a Domingos</p>
+            <p> 20:00 hs - 00:00 hs</p>
+            <p>Sábados y Domingos</p>
+            <p> 11:00 hs - 15:00 hs</p>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>El Buen Sabor</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+
+
+    
+</body>
+</html>
