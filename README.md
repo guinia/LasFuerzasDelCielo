@@ -1,30 +1,25 @@
-# Trabajo Final - Desarrollo de Software 2023 - UTN-FRM
 
-## ***EL BUEN SABOR***
+Realizar las siguientes actividades correspondientes al práctico de Ingeniería Inversa.
 
-![Logo](https://github.com/guinia/LasFuerzasDelCielo/assets/141883421/f440b64e-c4f2-4198-9568-e2561865b159)
+Modelo de Diagrama de Clase:
+- Ver los videos de esta playlist
+  https://www.youtube.com/playlist?list=PLRFOqDrY-6nv7yXWNgFJe8ELDUfJGLI2J
 
-El sitio de delivery de comida de "El Buen Sabor" te sumerge en un mundo culinario lleno de autenticidad y pasión por la gastronomía.
-Nuestro tema se centra en la búsqueda incesante de los sabores más auténticos y deliciosos de Mendoza. Cada bocado es una aventura que celebra la riqueza de la comida casera y la tradición culinaria argentina.
+Link de descarga del Enterprice Arquitec
+https://drive.google.com/file/d/1sil27mwVW4Fq2_jl7kMg6oH4qR5oanpn/view
 
-Nuestro público objetivo abarca a amantes de la comida que valoran la calidad, la autenticidad y la comodidad en igual medida. Nos dirigimos a individuos y familias que desean experimentar la verdadera esencia
-de diferentes cocinas, pero que también buscan la conveniencia de recibir estos placeres culinarios directamente en sus hogares u oficinas. Los amantes de la comida aventureros, los profesionales ocupados y aquellos
-que desean un descanso ocasional de cocinar encuentran en "El Buen Sabor" su aliado confiable para satisfacer sus antojos con auténtica comida de alta calidad.
+Link del proyecto a Analizar en Git hub.
+- Estudiar las entidades y enumeraciones correspondientes y realizar la intepretación de las mismas.
+- Diseñar el diagrama de clases correspondiente con todos sus componentes.
+- Capturar la pantalla del diagrama y pegarla en un documento word. El nombre del archivo será apellidoLegajoDiag.doc
+- Entregar el archivo en formato.doc en el sitio correspondiente a tareas del aula virtual - PESTAÑA de Entrega de prácticos
 
-## Equipo
-**Nombre del equipo:** Las Fuerzas del Cielo
+Rúbrica de evaluación:
+- Todas las clases
+ -Todas las enumeraciones
+- Propiedades y métodos en las clases
+- Todas las relaciones
+- Todas las cardinalidades
 
-**Comisión:** 3k9
-
-**Integrantes:**
-- Bürky, Lucía
-- Citro, Camila
-- Costa, Máximo
-- Guiñazu, Tomás
-- Mezzabotta, Tomás
-- Vicente, Santiago
-- Zárate, Sofía
-
-## Tecnologías utilizadas:
-- Figma: https://www.figma.com/file/pUACfg9MD9V1ojv0LM2m9o/WireFrames?type=design&mode=design&t=rBGWWuMbGpKBApy2-0
-- Jira: https://elbuensabor23.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog
+Fecha de Entrega
+Martes 26 de septiembre - hora 23:00 hs
