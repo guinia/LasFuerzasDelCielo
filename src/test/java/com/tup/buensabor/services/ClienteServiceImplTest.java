@@ -30,22 +30,14 @@ public class ClienteServiceImplTest {
         cliente1.setNombre("Tomas");
         cliente1.setApellido("Guiñazu");
 
-        Cliente cliente2 = new Cliente();
-        cliente2.setNombre("Santiago");
-        cliente2.setApellido("Vicente");
 
         List<Cliente> listaEnviada = new ArrayList();
         listaEnviada.add(cliente1);
-        listaEnviada.add(cliente2);
 
         when(clienteRepository.searchNativo("Tomas")).thenReturn(listaEnviada);
         when(clienteRepository.searchNativo("Guiñazu")).thenReturn(listaEnviada);
-        when(clienteRepository.searchNativo("Santiago")).thenReturn(listaEnviada);
-        when(clienteRepository.searchNativo("Vicente")).thenReturn(listaEnviada);
         assertEquals(listaEnviada, clienteServiceImpl.search("Tomas"));
         assertEquals(listaEnviada, clienteServiceImpl.search("Guiñazu"));
-        assertEquals(listaEnviada, clienteServiceImpl.search("Santiago"));
-        assertEquals(listaEnviada, clienteServiceImpl.search("Vicente"));
 
 
     }

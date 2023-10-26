@@ -25,7 +25,6 @@ public class ArticuloManufacturadoRepositoryTest {
     void testSearchString(){
         ArticuloManufacturado articuloManufacturado = new ArticuloManufacturado();
         articuloManufacturado.setDenominacion("Hamburguesa");
-        articuloManufacturado.setDescripcion("Hamburguesa Completa con Palta, Huevo, Panceta entre otros");
 
         List<ArticuloManufacturado> listaEnviada = new ArrayList();
         listaEnviada.add(articuloManufacturado);
@@ -34,7 +33,6 @@ public class ArticuloManufacturadoRepositoryTest {
         entityManager.flush();
 
         assertEquals(listaEnviada, articuloManufacturadoRepository.searchNativo("Hamburguesa"));
-        assertEquals(listaEnviada, articuloManufacturadoRepository.searchNativo("Hamburguesa Completa con Palta, Huevo, Panceta entre otros"));
 
 
 

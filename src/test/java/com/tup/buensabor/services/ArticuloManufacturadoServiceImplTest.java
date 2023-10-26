@@ -26,7 +26,6 @@ public class ArticuloManufacturadoServiceImplTest {
     void testSearchString() throws Exception {
         ArticuloManufacturado articuloManufacturado = new ArticuloManufacturado();
         articuloManufacturado.setDenominacion("Hamburguesa");
-        articuloManufacturado.setDescripcion("Hamburguesa Completa con Palta, Huevo, Panceta entre otros");
 
         List<ArticuloManufacturado> listaEnviada = new ArrayList();
         listaEnviada.add(articuloManufacturado);
