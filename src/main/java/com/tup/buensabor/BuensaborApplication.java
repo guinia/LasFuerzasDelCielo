@@ -14,7 +14,7 @@ import java.util.Date;
 @SpringBootApplication
 public class BuensaborApplication {
 	@Autowired
-	ClienteRepository clienteRepository;
+	PersonaRepository personaRepository;
 
 	@Autowired
 	ArticuloInsumoRepository articuloInsumoRepository;
@@ -49,7 +49,7 @@ public class BuensaborApplication {
 	}
 
 	@Bean
-	CommandLineRunner init(ClienteRepository clienteRepository, ArticuloInsumoRepository articuloInsumoRepository, ArticuloManufacturadoRepository articuloManufacturadoRepository, PedidoRepository pedidoRepository, RubroArticuloRepository rubroArticuloRepository, UnidadMedidaRepository unidadMedidaRepository) {
+	CommandLineRunner init(PersonaRepository personaRepository, ArticuloInsumoRepository articuloInsumoRepository, ArticuloManufacturadoRepository articuloManufacturadoRepository, PedidoRepository pedidoRepository, RubroArticuloRepository rubroArticuloRepository, UnidadMedidaRepository unidadMedidaRepository) {
 		return args -> {
 			System.out.println("----------------ESTOY----FUNCIONANDO---------------------");
 			SimpleDateFormat formatoFecha = new SimpleDateFormat ("yyyy-MM-dd");
