@@ -74,9 +74,16 @@ public class Pedido extends Base {
     private List<DetallePedido> detalles = new ArrayList<>();
 
     public void agregarDetalle(DetallePedido detallePedido){
+
         detalles.add(detallePedido);
     }
 
-    // HACER MÉTODO DE MOSTRAR DETALLES
-
+    //MÉTODO DE MOSTRAR DETALLES
+    public void mostrarDetalles(){
+        int contador = 0;
+        for (DetallePedido detallePedido: detalles){
+            System.out.println("Línea numero: " + contador + ", Producto" + detallePedido.getArticuloManufacturado() + ", cantidad pedida: " + detallePedido.getCantidad() + ", subtotal: " + detallePedido.getSubtotal());
+            contador = contador + 1;
+        }
+    }
 }

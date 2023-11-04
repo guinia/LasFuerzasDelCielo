@@ -8,7 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
+import java.math.BigDecimal;
 
 @Service
 public class FacturaServiceImpl extends BaseServiceImpl<Factura,Long> implements FacturaService {
@@ -38,6 +39,16 @@ public class FacturaServiceImpl extends BaseServiceImpl<Factura,Long> implements
             Page<Factura> entities = facturaRepository.searchNativo(filtro, pageable);
             return entities;
         } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public BigDecimal searchTotalVentas(Date desde, Date hasta) throws Exception{
+        try{
+            BigDecimal buscarTotal = facturaRepository.searchTotalVentas(desde, hasta);
+            return buscarTotal;
+        }catch (Exception e){
             throw new Exception(e.getMessage());
         }
     }
