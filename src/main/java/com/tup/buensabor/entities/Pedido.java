@@ -61,7 +61,7 @@ public class Pedido extends Base {
     @NotNull
     @ManyToOne()
     @JoinColumn(name = "id_cliente")
-    private Cliente cliente;
+    private Persona persona;
 
     @NotNull
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)

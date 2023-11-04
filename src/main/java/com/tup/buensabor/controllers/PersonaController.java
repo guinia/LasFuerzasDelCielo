@@ -1,19 +1,16 @@
 package com.tup.buensabor.controllers;
 
-import com.tup.buensabor.entities.Factura;
-import com.tup.buensabor.services.FacturaServiceImpl;
+import com.tup.buensabor.entities.Persona;
+import com.tup.buensabor.services.PersonaServiceImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
-
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/facturas")
-
-public class FacturaController extends BaseControllerImpl<Factura, FacturaServiceImpl> {
+@RequestMapping(path = "api/v1/clientes")
+public class PersonaController extends BaseControllerImpl<Persona, PersonaServiceImpl> {
     @GetMapping("/search")
     public ResponseEntity<?> search(@RequestParam String filtro){
         try {
@@ -22,7 +19,6 @@ public class FacturaController extends BaseControllerImpl<Factura, FacturaServic
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
-
     @GetMapping("/searchPaged")
     public ResponseEntity<?> search(@RequestParam String filtro, Pageable pageable){
         try {

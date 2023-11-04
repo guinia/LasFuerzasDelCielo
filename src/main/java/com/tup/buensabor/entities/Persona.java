@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import lombok.Builder;
@@ -12,12 +11,12 @@ import lombok.Builder;
 @Entity
 @Getter
 @Setter
-@Table(name = "cliente")
+@Table(name = "persona")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 
-public class Cliente extends Base {
+public class Persona extends Base {
 
     private String nombre;
 
@@ -32,7 +31,7 @@ public class Cliente extends Base {
     private Usuario usuario;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    @JoinColumn(name = "id_cliente")
+    @JoinColumn(name = "id_persona")
     @Builder.Default
     private List<Domicilio> domicilios = new ArrayList<>();
 

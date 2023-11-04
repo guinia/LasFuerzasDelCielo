@@ -1,19 +1,16 @@
 package com.tup.buensabor.controllers;
 
-import com.tup.buensabor.entities.Cliente;
-import com.tup.buensabor.services.ClienteServiceImpl;
+import com.tup.buensabor.entities.NotaCredito;
+import com.tup.buensabor.services.NotaCreditoServiceImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import java.util.Date;
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/clientes")
-public class ClienteController extends BaseControllerImpl<Cliente, ClienteServiceImpl> {
-
-
-
+@RequestMapping(path = "api/v1/notascredito")
+public class NotaCreditoController extends BaseControllerImpl<NotaCredito, NotaCreditoServiceImpl> {
     @GetMapping("/search")
     public ResponseEntity<?> search(@RequestParam String filtro){
         try {
@@ -31,7 +28,13 @@ public class ClienteController extends BaseControllerImpl<Cliente, ClienteServic
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
-
-
+    @GetMapping("/searchMontoTotal")
+    public ResponseEntity<?> searchMontoTotal(@RequestParam Date desde, Date hasta){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.searchMontoTotal(desde, hasta));
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
 
 }

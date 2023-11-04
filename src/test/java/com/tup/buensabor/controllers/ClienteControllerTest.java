@@ -1,7 +1,7 @@
 package com.tup.buensabor.controllers;
 
-import com.tup.buensabor.entities.Cliente;
-import com.tup.buensabor.services.ClienteServiceImpl;
+import com.tup.buensabor.entities.Persona;
+import com.tup.buensabor.services.PersonaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ClienteControllerTest {
 
     @MockBean
-    private ClienteServiceImpl clienteService;
+    private PersonaServiceImpl clienteService;
 
     @Autowired
     private MockMvc mockMvc;

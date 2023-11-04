@@ -1,13 +1,10 @@
 package com.tup.buensabor.repositories;
 
-import com.tup.buensabor.entities.ArticuloManufacturado;
-import com.tup.buensabor.entities.Cliente;
-import com.tup.buensabor.services.ClienteServiceImpl;
+import com.tup.buensabor.entities.Persona;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +12,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DataJpaTest
-public class ClienteRepositoryTest {
+public class PersonaRepositoryTest {
     @Autowired
     private EntityManager entityManager;
 
@@ -25,15 +22,15 @@ public class ClienteRepositoryTest {
     @Test
     void testSearchString() throws Exception {
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setNombre("Tomas");
-        cliente1.setApellido("Guiñazu");
+        Persona persona1 = new Persona();
+        persona1.setNombre("Tomas");
+        persona1.setApellido("Guiñazu");
 
 
-        List<Cliente> listaEnviada = new ArrayList();
-        listaEnviada.add(cliente1);
+        List<Persona> listaEnviada = new ArrayList();
+        listaEnviada.add(persona1);
 
-        entityManager.persist(cliente1);
+        entityManager.persist(persona1);
         entityManager.flush();
 
         assertEquals(listaEnviada, clienteRepository.searchNativo("Tomas"));

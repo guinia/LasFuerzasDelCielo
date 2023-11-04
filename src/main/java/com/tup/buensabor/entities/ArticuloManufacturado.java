@@ -20,10 +20,11 @@ import java.util.List;
 public class ArticuloManufacturado extends Base {
 
     @NotNull
+    @Column(name = "denominacion")
     private String denominacion;
 
     @NotNull
-    @Column(length = 1000)
+    @Column(name = "descripcion",length = 1000)
     private String descripcion;
 
     @NotNull
@@ -39,6 +40,9 @@ public class ArticuloManufacturado extends Base {
 
     @Column(length = 500, name = "url_imagen")
     private String urlImagen;
+
+    @Column(length = 1000, name = "receta")
+    private String receta;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     @JoinColumn(name = "id_articulomanufacturado")

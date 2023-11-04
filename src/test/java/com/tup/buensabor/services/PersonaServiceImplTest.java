@@ -1,7 +1,6 @@
 package com.tup.buensabor.services;
 
-import com.tup.buensabor.entities.ArticuloManufacturado;
-import com.tup.buensabor.entities.Cliente;
+import com.tup.buensabor.entities.Persona;
 import com.tup.buensabor.repositories.ClienteRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,24 +14,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class ClienteServiceImplTest {
+public class PersonaServiceImplTest {
 
     @MockBean
     private ClienteRepository clienteRepository;
 
     @Autowired
-    private ClienteServiceImpl clienteServiceImpl;
+    private PersonaServiceImpl clienteServiceImpl;
 
     @Test
     void testSearchString() throws Exception {
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setNombre("Tomas");
-        cliente1.setApellido("Guiñazu");
+        Persona persona1 = new Persona();
+        persona1.setNombre("Tomas");
+        persona1.setApellido("Guiñazu");
 
 
-        List<Cliente> listaEnviada = new ArrayList();
-        listaEnviada.add(cliente1);
+        List<Persona> listaEnviada = new ArrayList();
+        listaEnviada.add(persona1);
 
         when(clienteRepository.searchNativo("Tomas")).thenReturn(listaEnviada);
         when(clienteRepository.searchNativo("Guiñazu")).thenReturn(listaEnviada);

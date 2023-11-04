@@ -2,9 +2,6 @@ package com.tup.buensabor;
 import com.tup.buensabor.enums.*;
 import com.tup.buensabor.entities.*;
 import com.tup.buensabor.repositories.*;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,9 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 @SpringBootApplication
 public class BuensaborApplication {
@@ -274,134 +269,134 @@ public class BuensaborApplication {
 			domicilio15.setFechaAlta(fecha);
 			domicilio16.setFechaAlta(fecha);
 
-			Cliente cliente1 = Cliente.builder()
+			Persona persona1 = Persona.builder()
 					.apellido("Gonzales")
 					.nombre("Juan")
 					.telefono("2617842914")
 					.email("gonzales_juani@gmail.com")
 					.build();
-			Cliente cliente2 = Cliente.builder()
+			Persona persona2 = Persona.builder()
 					.apellido("Rodriguez")
 					.nombre("Julian")
 					.telefono("2611111111")
 					.email("rodriguezjulian@gmail.com")
 					.build();
-			Cliente cliente3 = Cliente.builder()
+			Persona persona3 = Persona.builder()
 					.apellido("Guiñazu")
 					.nombre("Félix")
 					.telefono("2612222222")
 					.email("Guiniazufelix@gmail.com")
 					.build();
-			Cliente cliente4 = Cliente.builder()
+			Persona persona4 = Persona.builder()
 					.apellido("Navarta")
 					.nombre("Emilia")
 					.telefono("2613333333")
 					.email("eminavarta@gmail.com")
 					.build();
-			Cliente cliente5 = Cliente.builder()
+			Persona persona5 = Persona.builder()
 					.apellido("Zeferino")
 					.nombre("Eliana")
 					.telefono("2614444444")
 					.email("elizeferino@gmail.com")
 					.build();
-			Cliente cliente6 = Cliente.builder()
+			Persona persona6 = Persona.builder()
 					.apellido("Mobilia")
 					.nombre("Agustina")
 					.telefono("2615555555")
 					.email("agustinamobilia@gmail.com")
 					.build();
-			Cliente cliente7 = Cliente.builder()
+			Persona persona7 = Persona.builder()
 					.apellido("Santi")
 					.nombre("Carmen")
 					.telefono("2616666666")
 					.email("carmensanti@gmail.com")
 					.build();
-			Cliente cliente8 = Cliente.builder()
+			Persona persona8 = Persona.builder()
 					.apellido("Orrico")
 					.nombre("Marcela")
 					.telefono("2617777777")
 					.email("orricomarce@gmail.com")
 					.build();
-			Cliente cliente9 = Cliente.builder()
+			Persona persona9 = Persona.builder()
 					.apellido("Honguito")
 					.nombre("Pepe")
 					.telefono("2618888888")
 					.email("hongopepe@gmail.com")
 					.build();
-			Cliente cliente10 = Cliente.builder()
+			Persona persona10 = Persona.builder()
 					.apellido("Merlín")
 					.nombre("Tomás")
 					.telefono("2619999999")
 					.email("merlinelmago@gmail.com")
 					.build();
-			Cliente cliente11 = Cliente.builder()
+			Persona persona11 = Persona.builder()
 					.apellido("Soto")
 					.nombre("Tomás")
 					.telefono("2610000000")
 					.email("sototomas@gmail.com")
 					.build();
-			Cliente cliente12 = Cliente.builder()
+			Persona persona12 = Persona.builder()
 					.apellido("Mateo")
 					.nombre("Rodriguez")
 					.telefono("2611212121")
 					.email("rodriguezmateo@gmail.com")
 					.build();
 
-			cliente1.setFechaAlta(fecha);
-			cliente2.setFechaAlta(fecha);
-			cliente3.setFechaAlta(fecha);
-			cliente4.setFechaAlta(fecha);
-			cliente5.setFechaAlta(fecha);
-			cliente6.setFechaAlta(fecha);
-			cliente7.setFechaAlta(fecha);
-			cliente8.setFechaAlta(fecha);
-			cliente9.setFechaAlta(fecha);
-			cliente10.setFechaAlta(fecha);
-			cliente11.setFechaAlta(fecha);
-			cliente12.setFechaAlta(fecha);
+			persona1.setFechaAlta(fecha);
+			persona2.setFechaAlta(fecha);
+			persona3.setFechaAlta(fecha);
+			persona4.setFechaAlta(fecha);
+			persona5.setFechaAlta(fecha);
+			persona6.setFechaAlta(fecha);
+			persona7.setFechaAlta(fecha);
+			persona8.setFechaAlta(fecha);
+			persona9.setFechaAlta(fecha);
+			persona10.setFechaAlta(fecha);
+			persona11.setFechaAlta(fecha);
+			persona12.setFechaAlta(fecha);
 
-			cliente1.agregarDomicilio(domicilio1);
-			cliente1.agregarDomicilio(domicilio2);
-			cliente2.agregarDomicilio(domicilio3);
-			cliente3.agregarDomicilio(domicilio4);
-			cliente4.agregarDomicilio(domicilio5);
-			cliente4.agregarDomicilio(domicilio6);
-			cliente5.agregarDomicilio(domicilio7);
-			cliente5.agregarDomicilio(domicilio8);
-			cliente6.agregarDomicilio(domicilio9);
-			cliente7.agregarDomicilio(domicilio10);
-			cliente8.agregarDomicilio(domicilio11);
-			cliente9.agregarDomicilio(domicilio12);
-			cliente10.agregarDomicilio(domicilio13);
-			cliente10.agregarDomicilio(domicilio14);
-			cliente11.agregarDomicilio(domicilio15);
-			cliente12.agregarDomicilio(domicilio16);
+			persona1.agregarDomicilio(domicilio1);
+			persona1.agregarDomicilio(domicilio2);
+			persona2.agregarDomicilio(domicilio3);
+			persona3.agregarDomicilio(domicilio4);
+			persona4.agregarDomicilio(domicilio5);
+			persona4.agregarDomicilio(domicilio6);
+			persona5.agregarDomicilio(domicilio7);
+			persona5.agregarDomicilio(domicilio8);
+			persona6.agregarDomicilio(domicilio9);
+			persona7.agregarDomicilio(domicilio10);
+			persona8.agregarDomicilio(domicilio11);
+			persona9.agregarDomicilio(domicilio12);
+			persona10.agregarDomicilio(domicilio13);
+			persona10.agregarDomicilio(domicilio14);
+			persona11.agregarDomicilio(domicilio15);
+			persona12.agregarDomicilio(domicilio16);
 
-			cliente1.setUsuario(usuario1);
-			cliente2.setUsuario(usuario2);
-			cliente3.setUsuario(usuario3);
-			cliente4.setUsuario(usuario4);
-			cliente5.setUsuario(usuario5);
-			cliente6.setUsuario(usuario6);
-			cliente7.setUsuario(usuario7);
-			cliente8.setUsuario(usuario8);
-			cliente9.setUsuario(usuario9);
-			cliente10.setUsuario(usuario10);
-			cliente11.setUsuario(usuario11);
-			cliente12.setUsuario(usuario12);
+			persona1.setUsuario(usuario1);
+			persona2.setUsuario(usuario2);
+			persona3.setUsuario(usuario3);
+			persona4.setUsuario(usuario4);
+			persona5.setUsuario(usuario5);
+			persona6.setUsuario(usuario6);
+			persona7.setUsuario(usuario7);
+			persona8.setUsuario(usuario8);
+			persona9.setUsuario(usuario9);
+			persona10.setUsuario(usuario10);
+			persona11.setUsuario(usuario11);
+			persona12.setUsuario(usuario12);
 
-			clienteRepository.save(cliente1);
-			clienteRepository.save(cliente2);
-			clienteRepository.save(cliente3);
-			clienteRepository.save(cliente4);
-			clienteRepository.save(cliente5);
-			clienteRepository.save(cliente6);
-			clienteRepository.save(cliente7);
-			clienteRepository.save(cliente8);
-			clienteRepository.save(cliente9);
-			clienteRepository.save(cliente10);
-			clienteRepository.save(cliente11);
-			clienteRepository.save(cliente12);
+			personaRepository.save(persona1);
+			personaRepository.save(persona2);
+			personaRepository.save(persona3);
+			personaRepository.save(persona4);
+			personaRepository.save(persona5);
+			personaRepository.save(persona6);
+			personaRepository.save(persona7);
+			personaRepository.save(persona8);
+			personaRepository.save(persona9);
+			personaRepository.save(persona10);
+			personaRepository.save(persona11);
+			personaRepository.save(persona12);
 
 			System.out.println("----------------ESTOY----FUNCIONANDO---------------------");
 
@@ -731,7 +726,7 @@ public class BuensaborApplication {
 
 
 			//no se que es subtotalCOSTO, le puse lo mismo en detalle y en pedido 500 mas que el total
-			//se lee: pedido nro n _ q es del cliente n
+			//se lee: pedido nro n _ q es del persona n
 			Pedido pedido1_1 = Pedido.builder()
 					.estado(EstadoPedido.PREPARACION)
 					.fechaPedido(fecha)
@@ -764,9 +759,9 @@ public class BuensaborApplication {
 			pedido2_1.setFechaAlta(fecha);
 			pedido3_2.setFechaAlta(fecha);
 
-			pedido1_1.setCliente(cliente1);
-			pedido2_1.setCliente(cliente1);
-			pedido3_2.setCliente(cliente2);
+			pedido1_1.setPersona(persona1);
+			pedido2_1.setPersona(persona1);
+			pedido3_2.setPersona(persona2);
 
 			pedido1_1.setDomicilioEntrega(domicilio1);
 			pedido2_1.setDomicilioEntrega(domicilio2);
