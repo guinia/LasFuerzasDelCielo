@@ -28,13 +28,13 @@ public class ClienteControllerTest {
 
     void testSearchString() throws Exception {
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setNombre("Tomas");
-        cliente1.setApellido("Guiñazu");
+        Persona persona1 = new Persona();
+        persona1.setNombre("Tomas");
+        persona1.setApellido("Guiñazu");
 
 
-        List<Cliente> listaEnviada = new ArrayList();
-        listaEnviada.add(cliente1);
+        List<Persona> listaEnviada = new ArrayList();
+        listaEnviada.add(persona1);
 
         when(clienteService.search("Tomas")).thenReturn(listaEnviada);
 

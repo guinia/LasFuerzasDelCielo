@@ -1,7 +1,6 @@
 package com.tup.buensabor.services;
 
-import com.tup.buensabor.entities.Cliente;
-import com.tup.buensabor.entities.Pedido;
+import com.tup.buensabor.entities.Persona;
 import com.tup.buensabor.repositories.BaseRepository;
 import com.tup.buensabor.repositories.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,30 +11,30 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ClienteServiceImpl extends BaseServiceImpl<Cliente,Long> implements ClienteService {
+public class PersonaServiceImpl extends BaseServiceImpl<Persona,Long> implements PersonaService {
 
     @Autowired
     private PersonaRepository personaRepository;
 
-    public ClienteServiceImpl(BaseRepository<Cliente, Long> baseRepository, ClienteRepository clienteRepository) {
+    public PersonaServiceImpl(BaseRepository<Persona, Long> baseRepository, PersonaRepository PersonaRepository) {
         super(baseRepository);
         this.personaRepository = personaRepository;
     }
 
     @Override
-    public List<Cliente> search(String filtro) throws Exception {
+    public List<Persona> search(String filtro) throws Exception {
         try{
-            List<Cliente> cliente = clienteRepository.searchNativo(filtro);
-            return cliente;
+            List<Persona> persona = personaRepository.searchNativo(filtro);
+            return persona;
         } catch (Exception e){
             throw new Exception(e.getMessage());
         }
     }
 
     @Override
-    public Page<Cliente> search(String filtro, Pageable pageable) throws Exception {
+    public Page<Persona> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Cliente> cliente = clienteRepository.searchNativo(filtro, pageable);
+            Page<Persona> cliente = personaRepository.searchNativo(filtro, pageable);
             return cliente;
         } catch (Exception e){
             throw new Exception(e.getMessage());
