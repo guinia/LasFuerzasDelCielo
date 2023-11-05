@@ -1,7 +1,6 @@
 package com.tup.buensabor.services;
 
 import com.tup.buensabor.entities.Pedido;
-import com.tup.buensabor.entities.RubroArticulo;
 import com.tup.buensabor.repositories.BaseRepository;
 import com.tup.buensabor.repositories.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

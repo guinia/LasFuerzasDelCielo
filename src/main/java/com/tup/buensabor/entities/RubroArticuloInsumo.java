@@ -5,22 +5,18 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 @Entity
-@Table(name = "rubro_articulo")
+@Table(name = "rubro_articulo_insumo")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @Builder
-public class RubroArticulo extends Base {
+public class RubroArticuloInsumo extends Base {
 
     @ManyToOne()
     @JoinColumn(name = "id_rubro_padre")
-    private RubroArticulo rubroPadre;
+    private RubroArticuloInsumo rubroPadre;
 
     //@OneToMany(mappedBy = "rubroPadre", cascade = CascadeType.ALL)
     //private List<RubroArticulo> subRubros = new ArrayList<>();

@@ -38,7 +38,7 @@ public class BuensaborApplication {
 	PedidoRepository pedidoRepository;
 
 	@Autowired
-	RubroArticuloRepository rubroArticuloRepository;
+	RubroArticuloInsumoRepository rubroArticuloInsumoRepository;
 
 	@Autowired
 	UnidadMedidaRepository unidadMedidaRepository;
@@ -49,7 +49,7 @@ public class BuensaborApplication {
 	}
 
 	@Bean
-	CommandLineRunner init(PersonaRepository personaRepository, ArticuloInsumoRepository articuloInsumoRepository, ArticuloManufacturadoRepository articuloManufacturadoRepository, PedidoRepository pedidoRepository, RubroArticuloRepository rubroArticuloRepository, UnidadMedidaRepository unidadMedidaRepository) {
+	CommandLineRunner init(PersonaRepository personaRepository, ArticuloInsumoRepository articuloInsumoRepository, ArticuloManufacturadoRepository articuloManufacturadoRepository, PedidoRepository pedidoRepository, RubroArticuloInsumoRepository rubroArticuloInsumoRepository, UnidadMedidaRepository unidadMedidaRepository) {
 		return args -> {
 			System.out.println("----------------ESTOY----FUNCIONANDO---------------------");
 			SimpleDateFormat formatoFecha = new SimpleDateFormat ("yyyy-MM-dd");
@@ -400,23 +400,23 @@ public class BuensaborApplication {
 
 			System.out.println("----------------ESTOY----FUNCIONANDO---------------------");
 
-			RubroArticulo rubro1 = RubroArticulo.builder()
+			RubroArticuloInsumo rubro1 = RubroArticuloInsumo.builder()
 					.denominacion("Hamburguesas")
 					.build();
-			RubroArticulo rubro2 = RubroArticulo.builder()
+			RubroArticuloInsumo rubro2 = RubroArticuloInsumo.builder()
 					.denominacion("Pizzas")
 					.build();
-			RubroArticulo rubro3 = RubroArticulo.builder()
+			RubroArticuloInsumo rubro3 = RubroArticuloInsumo.builder()
 					.denominacion("Comida Rapida")
 					.build();
 
 			// rubro es de manufactura o insumo????
 			// creo de ambas por las dudas
 
-			RubroArticulo rubro4 = RubroArticulo.builder()
+			RubroArticuloInsumo rubro4 = RubroArticuloInsumo.builder()
 					.denominacion("Verdura")
 					.build();
-			RubroArticulo rubro5 = RubroArticulo.builder()
+			RubroArticuloInsumo rubro5 = RubroArticuloInsumo.builder()
 					.denominacion("Carnes")
 					.build();
 
@@ -439,11 +439,11 @@ public class BuensaborApplication {
 			//rubro3.agregarSubRubro(rubro1);
 			//rubro3.agregarSubRubro(rubro2);
 
-			rubroArticuloRepository.save(rubro3);
-			rubroArticuloRepository.save(rubro1);
-			rubroArticuloRepository.save(rubro2);
-			rubroArticuloRepository.save(rubro4);
-			rubroArticuloRepository.save(rubro5);
+			rubroArticuloInsumoRepository.save(rubro3);
+			rubroArticuloInsumoRepository.save(rubro1);
+			rubroArticuloInsumoRepository.save(rubro2);
+			rubroArticuloInsumoRepository.save(rubro4);
+			rubroArticuloInsumoRepository.save(rubro5);
 
 			UnidadMedida unidad1 = UnidadMedida.builder()
 					.denominacion("kilogramos")

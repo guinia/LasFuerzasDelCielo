@@ -6,7 +6,6 @@ import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 @Entity
 @Table(name = "articulo_insumo")
@@ -43,7 +42,7 @@ public class ArticuloInsumo extends Base {
     @NotNull
     @ManyToOne()
     @JoinColumn(name = "id_rubro_articulo")
-    private RubroArticulo rubroArticulo;
+    private RubroArticuloInsumo rubroArticuloInsumo;
 
 
 }

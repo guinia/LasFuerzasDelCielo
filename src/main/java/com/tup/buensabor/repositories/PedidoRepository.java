@@ -1,7 +1,6 @@
 package com.tup.buensabor.repositories;
 
 import com.tup.buensabor.entities.Pedido;
-import com.tup.buensabor.entities.RubroArticulo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
