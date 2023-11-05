@@ -1,7 +1,10 @@
 package com.tup.buensabor.controllers;
 
+
 import com.tup.buensabor.entities.RubroArticuloInsumo;
+import com.tup.buensabor.entities.RubroArticuloManufacturado;
 import com.tup.buensabor.services.RubroArticuloInsumoServiceImpl;
+import com.tup.buensabor.services.RubroArticuloManufacturadoServiceImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,8 +12,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/RubrosArticulos")
-public class RubroArticuloController extends BaseControllerImpl<RubroArticuloInsumo, RubroArticuloInsumoServiceImpl> {
+@RequestMapping(path = "api/v1/RubrosArticulosManufacturados")
+public class RubroArticuloManufacturadoController extends BaseControllerImpl<RubroArticuloManufacturado, RubroArticuloManufacturadoServiceImpl> {
 
 
     @GetMapping("/search")
@@ -30,7 +33,6 @@ public class RubroArticuloController extends BaseControllerImpl<RubroArticuloIns
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
-
 
 
 }
