@@ -1,5 +1,6 @@
 package com.tup.buensabor.services;
 
+import com.tup.buensabor.dtos.DTORankingArticulosManufacturados;
 import com.tup.buensabor.entities.ArticuloManufacturado;
 import com.tup.buensabor.repositories.ArticuloManufacturadoRepository;
 import com.tup.buensabor.repositories.BaseRepository;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -37,6 +39,25 @@ public class ArticuloManufacturadoServiceImpl extends BaseServiceImpl<ArticuloMa
             Page<ArticuloManufacturado> articulos = articuloManufacturadoRepository.searchNativo(filtro, pageable);
             return articulos;
         } catch (Exception e){
+            throw new Exception(e.getMessage());
+        }
+    }
+    @Override
+    public List<DTORankingArticulosManufacturados> filtradoPorProductoVendido() throws Exception {
+        try {
+            List<DTORankingArticulosManufacturados> articulos = articuloManufacturadoRepository.filtroPorProductoVendido();
+            return articulos;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<DTORankingArticulosManufacturados> filtradoPorProductoVendidoPorFecha(Date filtro1, Date filtro2) throws Exception {
+        try {
+            List<DTORankingArticulosManufacturados> articulos = articuloManufacturadoRepository.filtradoPorProductoVendidoPorFecha(filtro1,filtro2);
+            return articulos;
+        } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
     }
